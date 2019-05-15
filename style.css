@@ -1,0 +1,18 @@
+.wrapper {
+    width: 20%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.content {
+    border: 1px #c0c0c0 solid;
+    padding: 10px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+.input-field {
+    margin-bottom: 15px;
+}
