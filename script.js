@@ -13,12 +13,15 @@ const getSteps = () => {
     let steps = [[1, 2], [1, -2], [2, 1], [2, -1], [-1, 2], [-1, -2], [-2, 1], [-2, -1]];
 
     steps.forEach((step) => {
-        if (((x = curX + step[0]) >= ("A".charCodeAt(0)) &&
+        if ((x >= "A".charCodeAt(0)) &&
+            (x <= "H".charCodeAt(0)) &&
+            (y >= 1) && (y <= 8) &&
+            ((x = curX + step[0]) >= ("A".charCodeAt(0)) &&
             (x = curX + step[0]) <= ("H".charCodeAt(0))) &&
             ((y = +curY + step[1]) >= 1 &&
             (y = +curY + step[1]) <= 8)) {
-                result.push(String.fromCharCode(x) + y);
-            }
+            result.push(String.fromCharCode(x) + y);
+        }
     });
 
     if (result.length) {
